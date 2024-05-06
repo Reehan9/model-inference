@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Model Inference UI</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Model Inference with Hugging Face</h1>
+        <label for="modelSelector">Hugging Face Models:</label>
+        <select id="modelSelector">
+            <option value="bert-base-uncased">BERT Base Uncased</option>
+            <option value="gpt-2">GPT-2</option>
+            <option value="distilbert-base-uncased">DistilBERT Base Uncased</option>
+            <!-- Additional models can be added here -->
+        </select>
+        <label for="inputText">Enter Input:</label>
+        <textarea id="inputText" placeholder="Type your text here..."></textarea>
+        <button onclick="loadModel()">Model Inference</button>
+        <h2>Output:</h2>
+        <div id="output" class="output"></div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

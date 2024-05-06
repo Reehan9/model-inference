@@ -1,0 +1,70 @@
+/* General Body and Container Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Consider switching to a web-safe version of HP Simplified */
+    background-color: #1c1c1c; /* Dark background for the whole page */
+    color: #f8f9fa; /* Light text color for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: #282828; /* Slightly lighter dark shade for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #00b388; /* HPE brand green for headers */
+}
+
+/* Input, Dropdown and Button Styles */
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #333333; /* Darker background for input fields */
+    border: 1px solid #444; /* Slight contrast for borders */
+    color: #ffffff; /* White text for inputs */
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #00b388; /* HPE green for buttons */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #008060; /* Darker green on hover */
+}
+
+/* Output Display Styles */
+.output {
+    background-color: #333333; /* Dark background for output */
+    color: #ffffff; /* White text for output */
+    border: 1px solid #444; /* Subtle border for output box */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto; /* Enable vertical scroll for longer outputs */
+    text-align: left;
+    font-family: 'Courier New', monospace; /* Monospaced font for output */
+}
+
